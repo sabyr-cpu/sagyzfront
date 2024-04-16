@@ -1,45 +1,49 @@
 import '../globals.css'
+import './home.css'
 import SubHeader from "@/app/components/subheader.jsx";
 import Header from "@/app/components/header.jsx";
 
 export default function Home () {
     return (
-        <>
-            <Header style={'blue'}/>
-            <SubHeader />
+        <div className="mainhome">
+            <div className="upper">
+                <Header style={'blue'}/>
+                <SubHeader />
+            </div>
             <main>
                 <div className="left">
+                    <div className="title">Поставки</div>
                     <div className="info">
                         <div className="address">
                             OxE40f88AC0149c75DE54580cd047f40a58E840962
                         </div>
-                        <div className="subtext">Адрес создателя</div>
+                        <div className="subtext bolder">Адрес создателя</div>
                         <div className="subtext">Кто создал эту поставку и может создавать запросы на вывод денег.</div>
                     </div>
                     <div className="info-grid">
                         <div className="info-box">
                             <div className="info-value">Sagyz</div>
-                            <div className="info-name">Компания</div>
+                            <div className="subtext bolder">Компания</div>
                         </div>
                         <div className="info-box">
                             <div className="info-value">Мангилик ел 32/1</div>
-                            <div className="info-name">Местоположение</div>
+                            <div className="subtext bolder">Местоположение</div>
                         </div>
                         <div className="info-box">
                             <div className="info-value">Овощи</div>
-                            <div className="info-name">Категория товара</div>
+                            <div className="subtext bolder">Категория товара</div>
                         </div>
                         <div className="info-box">
                             <div className="info-value">3</div>
-                            <div className="info-name">Количество  перевозок</div>
+                            <div className="subtext bolder">Количество  перевозок</div>
                         </div>
                         <div className="info-box">
                             <div className="info-value">Производство</div>
-                            <div className="info-name">Данные о производстве</div>
+                            <div className="subtext bolder">Данные о производстве</div>
                         </div>
                         <div className="info-box">
                             <div className="info-value">Состояние товара</div>
-                            <div className="info-name">Изменения состояния товара</div>
+                            <div className="subtext bolder">Изменения состояния товара</div>
                         </div>
                     </div>
                     <div className='left-button'>
@@ -47,14 +51,14 @@ export default function Home () {
                     </div>
                 </div>
                 <div className="right">
+                    <div className="title">Регистрация</div>
                     <form action="">
-                        <div className="form-title">Регистрация</div>
                         <div className="form-inside-container">
                             <div className="form-row">
                                 <label htmlFor="">Оценочная годовая выручка</label>
                                 <div className="double-input">
-                                    <input type="text"/>
-                                    <input type="text"/>
+                                    <input type="text" className="sum"/>
+                                    <input type="text" className="mon"/>
                                 </div>
                             </div>
                             <div className="form-row">
@@ -67,13 +71,14 @@ export default function Home () {
                                 <label htmlFor="">Налогообложение</label><input type="text"/>
                             </div>
                         </div>
-                        <button>Зарегистрироватся</button>
+
+                        <div className="buttons">
+                            <button>Зарегистрироватся</button>
+                            <button>Добавить сотрудника</button>
+                        </div>
                     </form>
-                    <div className="div">
-                        <button>Добавить сотрудника</button>
-                    </div>
                 </div>
             </main>
-        </>
+        </div>
     )
 }

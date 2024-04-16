@@ -5,7 +5,7 @@
     background-size: cover;
 }
 
-main {
+.home main {
     display: flex;
     padding-left: 195px;
     padding-right: 195px;
@@ -16,19 +16,19 @@ main {
     z-index: -200;
 }
 
-.info {
+.home .info {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 50vw;
 }
 
-.bigtext {
+.home .bigtext {
     font-weight: 700;
     font-size: 80px;
 }
 
-.smalltext {
+.home.smalltext {
     font-weight: 500;
     font-size: 24px;
 }
