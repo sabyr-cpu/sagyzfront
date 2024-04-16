@@ -1,0 +1,59 @@
+.home {
+    height: 100vh;
+    overflow: hidden;
+    background: url("/background.png");
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    padding-left: 195px;
+    padding-right: 195px;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: calc(100vh - 87px);
+    z-index: -200;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50vw;
+}
+
+.bigtext {
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.smalltext {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.info button {
+    margin-top: 100px;
+    background: white;
+    color: #54BDBB;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 50vw;
+
+}
+
+.sagyz {
+    height: 383px;
+    width: auto;
+    z-index: 100;
+}

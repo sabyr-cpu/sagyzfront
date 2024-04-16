@@ -1,0 +1,51 @@
+.h-container, .h-subcontainer, .h-nav {
+    display: flex;
+    align-items: center;
+    color: #54BDBB;
+    background: white;
+    height: 87px;
+}
+
+.h-blue, .h-blue .h-subcontainer, .h-nav {
+    background: #54BDBB;
+    color: white;
+}
+
+.h-container {
+    justify-content: space-between;
+    padding-left: 123px;
+    padding-right: 123px;
+    font-size: 24px;
+}
+
+.h-logo {
+    font-weight: bold;
+}
+
+.h-subcontainer {
+    gap: 53px;
+    font-size: 16px;
+}
+
+.h-nav {
+    gap: 35px;
+}
+
+.h-button button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #54BDBB;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+.h-blue .h-button button {
+    background: white;
+    color: #54BDBB;
+}
+
+.h-vision {
+    cursor: pointer;
+}
